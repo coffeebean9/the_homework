@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //冒泡排序法对输入的数组进行排列
+        var temp,arr = [];
+        var num = prompt('请输入数组的个数：');
+        for (var i = 0; i < num; i++){
+             arr[i] = prompt('请输入第'+(i+1)+'个数的值：');
+        }
+        for (var i = 0; i <= arr.length; i++){
+            for (var j = 0; j <= arr.length -i - 1; j++){
+                if (arr[j] > arr[j+1]){
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        alert('经从小到大排序后的数组为：'+arr);
+
+        //函数调用有关形参和实参
+        function getSum(num1, num2){
+            console.log(num1+num2);
+        }
+        getSum(3,5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

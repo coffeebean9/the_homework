@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //用for in 遍历对象
+        var obj = {
+            uname: '马荣俊',
+            age: 21,
+            sex: '男',
+            sayHi: function(){
+               alert('帅气逼人');
+            }
+        }
+        for (var k in obj){ //使用for in 里面的变量喜欢用k 或者 key
+            console.log(k);//k 变量输出的是属性名 如uname 、age、
+            console.log(obj[k]);//这样输出的则是属性值
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

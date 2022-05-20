@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.Math对象随机数方法 random() 返回一个0~1的随机小数 0<=x<1
+        //2.这个方法里面不跟参数
+        //3.代码如下
+        console.log(Math.random());
+        //4.通过公式可以得到一个两个数之间的随机整数
+        function getRandom(min,max){
+            return Math.floor(Math.random()*(max-min+1)) +min; //该公式要学会运用
+        }
+        console.log(getRandom(1,10));
+        //5.代码改变随机点名
+        var arr = ['张三','张三丰','马荣俊','马壮武','陈睿','袁晟荣'];
+        console.log(arr[getRandom(0,arr.length-1)]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
